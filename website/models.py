@@ -26,3 +26,14 @@ class Organization(models.Model):
     def __str__(self):
         return(f'{self.name}')
 
+    def shorten_description(self):
+        s = self.description
+        if len(s) < 150:
+            return s
+        else:
+            s = s[:150]
+            indx = s.rfind(" ")
+            s = s[:indx]
+            s = s.strip(",") + " ..."
+            return s
+
