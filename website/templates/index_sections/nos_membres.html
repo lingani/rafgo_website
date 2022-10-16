@@ -36,7 +36,7 @@
 
             {% for org in orgs %}
             <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item  filter-{{org.country.code}} {% if org in sample_orgs %} filter-sampled {% endif %}">
-              <img class="card-img-top" alt="..." src="{% if org.image_logo %} {{org.image_logo.url}} {% else %} {% static 'assets/img/portfolio/app-1.jpg' %} {% endif %}">
+              <img class="card-img-top" alt="..." src="{% if org.image_logo %} {{org.image_logo.url}} {% else %} {% static 'assets/img/default_logo.png' %} {% endif %}">
               <div class="card">
                 <div class="card-body">
                   <h4>{{org.short_name}}</h4>
