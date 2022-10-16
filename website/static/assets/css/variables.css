@@ -37,7 +37,8 @@
   --color-links-hover: #1ec3e0;
 
   /* Primay colors */
-  --color-primary: #0ea2bd;
+  /*--color-primary: #0ea2bd;*/
+  --color-primary: #1daeed;
   --color-primary-light: #1ec3e0;
   --color-primary-dark: #0189a1;
   --color-primary-dark-footer: #e27948;

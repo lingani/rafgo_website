@@ -17,7 +17,7 @@
         <div class="portfolio-isotope" data-portfolio-filter=".filter-sampled" data-portfolio-layout="masonry" data-portfolio-sort="original-order">
 
           <ul class="portfolio-flters">
-            <li data-filter=".filter-sampled" class="filter-active">sampled</li>
+            <li data-filter=".filter-sampled" class="filter-active">{% trans "Aperçu" %}</li>
             {% for p in countries %}
               <li data-filter=".filter-{{p.code}}">{{p.name}}</li>
             {% endfor %}

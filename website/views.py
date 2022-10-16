@@ -7,6 +7,7 @@ menu_principal = Menu()
 
 orgs = Organization.objects.all()
 countries = list(set([org.country for org in orgs]))
+countries.sort(key=lambda c: c.name)
 
 def sampled_organizations(orgs):
     countries = list(set([org.country for org in orgs]))
