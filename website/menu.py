@@ -8,7 +8,7 @@ class Menu:
 			{"position": "3", "name":"Notre Leadership", "href": "#team"},
 			{"position": "4", "name":"Nos Membres", "href": "#portfolio"},
 			{"position": "5", "name":"Nos Projets", "href": "#services"},
-			{"position": "6", "name":"Blog", "href": "../blog"},
+			{"position": "6", "name":"Blog", "href": "#recent-blog-posts"},
 			{"position": "7", "name":"Nous Contacter", "href": "#contact"}]
 		},
 
@@ -18,9 +18,9 @@ class Menu:
 			{"position": "2", "name":"A Propos", "href": "../home/#about"},
 			{"position": "3", "name":"Notre Leadership", "href": "../home/#team"},
 			{"position": "4", "name":"Nos Membres", "href": "../home/#portfolio"},
-			{"position": "5", "name":"Nos Projets", "href": "../home/#services"},
+			{"position": "5", "name":"Nos Projets", "href": "../blog/#services"},
 			{"position": "6", "name":"Blog", "href": "#"},
-			{"position": "7", "name":"Nous Contact", "href": "../home/#contact"}]
+			{"position": "7", "name":"Nous Contact", "href": "../blog/#contact"}]
 		},
 
 		{

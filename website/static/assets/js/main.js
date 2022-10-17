@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
    * Navbar links active state on scroll
    */
   let navbarlinks = document.querySelectorAll('#navbar .scrollto');
+  console.log(navbarlinks)
 
   function navbarlinksActive() {
     navbarlinks.forEach(navbarlink => {

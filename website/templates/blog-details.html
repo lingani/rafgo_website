@@ -49,9 +49,7 @@
 <body>
 
   <!-- ======= Header ======= -->
-    <header id="header" class="header fixed-top" data-scrollto-offset="0">
       {% include 'header.html' %}
-    </header>
   <!-- ======= End Header ======= -->
 
   <main id="main">
@@ -73,7 +71,7 @@
     </div><!-- End Breadcrumbs -->
 
     <!-- ======= Blog Details Section ======= -->
-    <section id="blog" class="blog">
+    <section id="recent_blogs" class="blog">
       <div class="container" data-aos="fade-up">
 
         <div class="row g-5">
@@ -413,6 +411,15 @@
 
   <!-- Template Main JS File -->
   <script src="{% static 'assets/js/main.js' %}"></script>
+
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+      els = document.getElementsByClassName('nav-link scrollto');
+      console.log(els[5]);
+      els[5].className = "nav-link scrollto active";
+      console.log(els[5].className);
+    }, false);
+  </script>
 
 </body>
 

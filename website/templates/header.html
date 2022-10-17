@@ -1,9 +1,10 @@
-  {% load i18n %}
-  {% load static %}
+{% load i18n %}
+{% load static %}
 
-  {% get_current_language as CURRENT_LANGUAGE %}
-  {% get_available_languages as AVAILABLE_LANGUAGES %}
-  {% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
+{% get_current_language as CURRENT_LANGUAGE %}
+{% get_available_languages as AVAILABLE_LANGUAGES %}
+{% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
+<header id="header" class="header fixed-top" data-scrollto-offset="0">
   <div class="container-fluid d-flex align-items-center justify-content-between">
 
     <a href="{{menu_principal.first.href}}" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
@@ -58,3 +59,4 @@
         </form>
       </div>
     </div>
+</header>
