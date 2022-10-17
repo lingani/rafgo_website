@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+{% load i18n %}
 {% load static %}
 <head>
   <meta charset="utf-8">
@@ -60,7 +61,7 @@
         <div class="d-flex justify-content-between align-items-center">
           <h2>Blog</h2>
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="../home">{% trans 'Accueil' %}</a></li>
             <li>Blog</li>
           </ol>
         </div>
@@ -104,7 +105,7 @@
                   </div>
 
                   <div class="read-more mt-auto align-self-end">
-                    <a href="../blog-details">Read More</a>
+                    <a href="../blog-details">{% trans 'Lire Plus' %}</a>
                   </div>
 
                 </article>
@@ -136,7 +137,7 @@
                   </div>
 
                   <div class="read-more mt-auto align-self-end">
-                    <a href="../blog-details">Read More</a>
+                    <a href="../blog-details">{% trans 'Lire Plus' %}</a>
                   </div>
 
                 </article>
@@ -168,7 +169,7 @@
                   </div>
 
                   <div class="read-more mt-auto align-self-end">
-                    <a href="../blog-details">Read More</a>
+                    <a href="../blog-details">{% trans 'Lire Plus' %}</a>
                   </div>
 
                 </article>
@@ -200,7 +201,7 @@
                   </div>
 
                   <div class="read-more mt-auto align-self-end">
-                    <a href="../blog-details">Read More</a>
+                    <a href="../blog-details">{% trans 'Lire Plus' %}</a>
                   </div>
 
                 </article>
@@ -232,7 +233,7 @@
                   </div>
 
                   <div class="read-more mt-auto align-self-end">
-                    <a href="../blog-details">Read More</a>
+                    <a href="../blog-details">{% trans 'Lire Plus' %}</a>
                   </div>
 
                 </article>
@@ -264,7 +265,7 @@
                   </div>
 
                   <div class="read-more mt-auto align-self-end">
-                    <a href="../blog-details">Read More</a>
+                    <a href="../blog-details">{% trans 'Lire Plus' %}</a>
                   </div>
 
                 </article>
@@ -287,7 +288,7 @@
             <div class="sidebar">
 
               <div class="sidebar-item search-form">
-                <h3 class="sidebar-title">Search</h3>
+                <h3 class="sidebar-title">{% trans 'Recherche' %}</h3>
                 <form action="" class="mt-3">
                   <input type="text">
                   <button type="submit"><i class="bi bi-search"></i></button>
@@ -307,7 +308,7 @@
               </div><!-- End sidebar categories-->
 
               <div class="sidebar-item recent-posts">
-                <h3 class="sidebar-title">Recent Posts</h3>
+                <h3 class="sidebar-title">{% trans 'Articles Réçents' %}</h3>
 
                 <div class="mt-3">
 
@@ -353,7 +354,7 @@
 
                 </div>
 
-              </div><!-- End sidebar recent posts-->
+              </div><!-- End sidebar {% trans 'Articles Réçents' %}-->
 
               <div class="sidebar-item tags">
                 <h3 class="sidebar-title">Tags</h3>
@@ -382,14 +383,6 @@
     </section><!-- End Blog Section -->
 
   </main><!-- End #main -->
-
-  <!-- ======= Services Section ======= -->
-      <!-- {% include 'index_sections/nos_projets.html' %} -->
-  <!-- End Services Section -->
-
-  <!-- ======= Contact Section ======= -->
-      <!-- {% include 'index_sections/contact.html' %} -->
-  <!-- End Contact Section -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
